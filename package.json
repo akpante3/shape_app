@@ -1,15 +1,23 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
   },
   "devDependencies": {
     "@nuxt/content": "2.13.0",
     "@nuxtjs/tailwindcss": "6.12.0",
-    "nuxt": "3.12.2"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/vue": "^8.1.0",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^20.0.10",
+    "nuxt": "3.12.2",
+    "vitest": "^4.0.13"
   }
 }

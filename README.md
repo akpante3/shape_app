@@ -82,6 +82,8 @@ pnpm run test
 # Run tests in watch mode for development
 pnpm run test:watch
 ```
+
+
 ```bash
 📂 Project Structure
 shapes-grid-app/
@@ -140,8 +142,10 @@ http://localhost:3000
 
 To access the shapes grid:
 
+```bash
 email: demo@shapes.com  
 password: password123
+```
 
 
 Auth logic is inside:
@@ -150,72 +154,78 @@ Auth logic is inside:
 
 🧪 Running Tests
 
-This project uses:
+** This project uses:
 
-Vitest for unit testing
+** Vitest for unit testing
 
-Vue Testing Library for component interactions
+** Vue Testing Library for component interactions
 
-happy-dom for DOM environment
+** happy-dom for DOM environment
 
-@testing-library/jest-dom for matchers
+** @testing-library/jest-dom for matchers
 
+```bash
 Run all tests
 pnpm run test
+```
 
+```bash
 Run tests in watch mode
 pnpm run test:watch
+```
 
 Test Coverage (optional)
 
 If you want coverage:
 
+```bash
 vitest --coverage
-
+```
+** 
 🧪 What Is Being Tested?
 ✔ utils/gridTitle.ts
 
 Ensures all 7 title rules work:
 
-All items
+** All items
 
-Multiple items
+** Multiple items
 
-All red items
+** All red items
 
-All oval items
+** All oval items
 
-Multiple red items
+** Multiple red items
 
-Multiple oval items
+** Multiple oval items
 
-Red oval items
+** Red oval items
 
 ✔ useFilters.ts
 
 Tests:
 
-Initial state (all selected)
+** Initial state (all selected)
 
-Clicking filters from “All”
+** Clicking filters from “All”
 
-Multi-select behaviour
+** Multi-select behaviour
 
-Deselecting the last item → resets to All
+** Deselecting the last item → resets to All
 
-Combined shape+color filtering
+** Combined shape+color filtering
 
-Filtered results match expected counts
+** Filtered results match expected counts
 
 🎨 TailwindCSS Setup
 
-Tailwind is added manually (recommended for Nuxt 3 stability):
+** ** Tailwind is added manually (recommended for Nuxt 3 stability):
 
-assets/css/tailwind.css
+** ** assets/css/tailwind.css
 
-tailwind.config.js
+** ** tailwind.config.js
 
-postcss.config.cjs
+** ** postcss.config.cjs
 
 Imported globally via:
 
@@ -253,19 +263,19 @@ export default defineNuxtConfig({
 
 🧱 Shapes Rendering
 
-Each shape is rendered visually via Tailwind + CSS:
+** Each shape is rendered visually via Tailwind + CSS:
 
-round: full circle
+** round: full circle
 
-oval: wide circle
+** oval: wide circle
 
-square: equal edges
+** square: equal edges
 
-rectangle: wide box
+** rectangle: wide box
 
-triangle: pure CSS triangle
+** triangle: pure CSS triangle
 
-All 6 colors supported.
+** All 6 colors supported.
 
 
 📄 License
