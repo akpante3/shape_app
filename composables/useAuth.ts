@@ -13,7 +13,6 @@ export const useAuth = () => {
 
   const login = (email: string, password: string) => {
     if (email === VALID_EMAIL && password === VALID_PASSWORD) {
-      // Only write cookies on the client to avoid header issues in SSR
       if (process.client) {
         token.value = 'mock-token';
       }

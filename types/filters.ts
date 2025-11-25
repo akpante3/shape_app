@@ -1,4 +1,3 @@
-// types/filters.ts
 export type Shape = 'oval' | 'round' | 'triangle' | 'square' | 'rectangle';
 
 export type Color =
